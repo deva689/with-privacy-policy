@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legal - Wiviy</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height:1.8;
+  width:100%;
+  min-height:100vh;
+  color:#1a1a1a;
+  background:#fdfcf9;
+}
+
+/* ── Tab Navigation ── */
+.tab-bar{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:#fff;
+  border-bottom:2px solid #e0f4f1;
+  display:flex;
+  align-items:center;
+  padding:0 40px;
+  gap:0;
+  box-shadow:0 2px 8px rgba(13,155,138,0.07);
+}
+
+.brand{
+  font-family: Arial, sans-serif;
+  font-size:20px;
+  font-weight:800;
+  color:#0d9b8a;
+  letter-spacing:-0.5px;
+  margin-right:36px;
+  padding:18px 0;
+  white-space:nowrap;
+}
+
+.tab-btn{
+  font-family: Arial, sans-serif;
+  font-size:15px;
+  font-weight:600;
+  color:#666;
+  background:none;
+  border:none;
+  border-bottom:3px solid transparent;
+  padding:18px 22px 15px;
+  cursor:pointer;
+  transition:color 0.2s, border-color 0.2s;
+  white-space:nowrap;
+}
+
+.tab-btn:hover{
+  color:#0d9b8a;
+}
+
+.tab-btn.active{
+  color:#0d9b8a;
+  border-bottom-color:#0d9b8a;
+}
+
+/* ── Page Content ── */
+.page{
+  display:none;
+  padding:48px 40px;
+}
+
+.page.active{
+  display:block;
+}
+
+.container{
+  width:100%;
+  max-width:1000px;
+  margin:auto;
+}
+
+h1{
+  font-family: Arial, sans-serif;
+  font-size:38px;
+  font-weight:800;
+  color:#0d9b8a;
+  margin-bottom:6px;
+  letter-spacing:-0.5px;
+}
+
+h2{
+  font-family: Arial, sans-serif;
+  font-size:22px;
+  font-weight:700;
+  color:#0d9b8a;
+  margin-top:36px;
+  margin-bottom:12px;
+  padding-bottom:6px;
+  border-bottom:2px solid #e0f4f1;
+}
+
+h3{
+  font-family: Arial, sans-serif;
+  font-size:17px;
+  font-weight:700;
+  color:#0a7a6c;
+  margin-top:20px;
+  margin-bottom:8px;
+}
+
+p{
+  font-size:16px;
+  margin-bottom:12px;
+  color:#2c2c2c;
+}
+
+a{
+  color:#0d9b8a;
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+ul{
+  margin-left:24px;
+  margin-top:8px;
+  margin-bottom:12px;
+}
+
+li{
+  font-size:16px;
+  margin-bottom:8px;
+  color:#2c2c2c;
+}
+
+table{
+  border-collapse:collapse;
+  width:100%;
+  margin-top:16px;
+  margin-bottom:16px;
+}
+
+table, th, td{
+  border:1px solid #cde8e4;
+}
+
+th, td{
+  padding:12px 16px;
+  text-align:left;
+  font-size:15px;
+}
+
+th{
+  background:#e8f8f5;
+  font-family: Arial, sans-serif;
+  font-weight:700;
+  color:#0a7a6c;
+}
+
+td{
+  background:#fff;
+}
+
+tr:nth-child(even) td{
+  background:#f5fdfb;
+}
+
+.notice{
+  background:#e8f8f5;
+  border-left:4px solid #0d9b8a;
+  padding:16px 20px;
+  margin:20px 0;
+  font-size:16px;
+  border-radius:0 6px 6px 0;
+}
+
+.meta{
+  font-family: Arial, sans-serif;
+  font-size:15px;
+  color:#555;
+  margin-bottom:20px;
+}
+
+.section{
+  margin-bottom:8px;
+}
+
+hr{
+  border:none;
+  border-top:1px solid #e0f4f1;
+  margin:8px 0;
+}
+
+@media(max-width:768px){
+  .tab-bar{ padding:0 16px; }
+  .brand{ font-size:17px; margin-right:16px; }
+  .tab-btn{ font-size:13px; padding:16px 12px 13px; }
+  .page{ padding:24px 16px; }
+  h1{ font-size:28px; }
+  h2{ font-size:19px; }
+  h3{ font-size:16px; }
+  p, li, td, th{ font-size:15px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Tab Navigation -->
+<div class="tab-bar">
+  <div class="brand">Wiviy</div>
+  <button class="tab-btn active" onclick="showTab('privacy')">Privacy Policy</button>
+  <button class="tab-btn" onclick="showTab('terms')">Terms of Use</button>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PRIVACY POLICY
+══════════════════════════════════════════ -->
+<div class="page active" id="page-privacy">
+<div class="container">
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">
+    <strong>Last Updated:</strong> December 2, 2025 &nbsp;|&nbsp;
+    <strong>Applies To:</strong> Users of WIVIY operated by <strong>Zuntra Digital Private Limited</strong> ("we", "us", "our")
+  </p>
+
+  <div class="notice">
+    Wiviy is intended only for users aged <strong>18 years or older</strong>.
+  </div>
+
+  <div class="section">
+    <h2>1. Introduction</h2>
+    <p>Your privacy is important to us. This Privacy Policy explains how WIVIY collects, uses, stores, shares, and protects your personal data when you use our website, mobile application, or related services (collectively, the "Platform").</p>
+    <p>By using the Platform, you consent to this Policy and our compliance with:</p>
+    <ul>
+      <li>Digital Personal Data Protection Act, 2023 (India)</li>
+      <li>Information Technology Act &amp; Rules (India)</li>
+      <li>General Data Protection Regulation (EU)</li>
+      <li>California Consumer Privacy Act (US)</li>
+    </ul>
+    <p>If you do not agree with this Policy, please discontinue use of the Platform.</p>
+  </div>
+
+  <div class="section">
+    <h2>2. Scope</h2>
+    <p>This Policy applies to:</p>
+    <ul>
+      <li>All registered users, visitors, and subscribers ("Users").</li>
+      <li>All personal data and sensitive personal data that we collect, whether online or offline.</li>
+      <li>Websites, apps, events and other services we operate under the WIVIY brand globally ("Service" and/or "Services").</li>
+    </ul>
+    <p>This Policy applies globally. Indian users are protected under the DPDP Act, 2023. Users in the EU, UK, or California are additionally protected under GDPR, UK-GDPR, and CCPA respectively.</p>
+  </div>
+
+  <div class="section">
+    <h2>3. Data We Collect</h2>
+    <p>We collect personal data and usage information to operate the Platform, enable matchmaking, ensure user safety, verify identities, personalise your experience, and provide core communication features. We may also receive information about you from third parties such as Google, Facebook, or Apple sign-in, verification partners, or analytics providers. This data is collected and processed strictly for the purposes outlined in this Privacy Policy and in accordance with the DPDP Act 2023, GDPR, CCPA, and applicable international laws.</p>
+
+    <h3>A. Data You Give Us</h3>
+    <ul>
+      <li><strong>Account Data:</strong> Phone number, email address, and date of birth when you create an account.</li>
+      <li><strong>Profile Data:</strong> Gender, interests, preferences, approximate location, and other details. Some data may be considered sensitive (e.g. sexual orientation, health, racial or ethnic origins, religious or political beliefs). Providing such data constitutes your consent to its use as described here.</li>
+      <li><strong>Content:</strong> Photos, videos, audio, text, and chats shared while using the Service.</li>
+      <li><strong>Purchase Data:</strong> Transaction details including what was purchased, date, and price. Payment card or financial data if paying directly with us.</li>
+      <li><strong>Marketing, Survey and Research Data:</strong> Information provided when participating in surveys, focus groups, promotions, or contests.</li>
+      <li><strong>Third-Party Data:</strong> Information about others you share with us (e.g. contact details used for a feature, or reports involving another member).</li>
+      <li><strong>Customer Support Data:</strong> Information provided when contacting us, including reports filed by or about you, and data collected during moderation investigations. If you were banned from another Zuntra Digital service, your data may be shared with us to take necessary actions. Where legally allowed, we may also receive information about suspected or convicted bad actors from third parties.</li>
+    </ul>
+
+    <h3>B. Data Generated or Automatically Collected</h3>
+    <ul>
+      <li><strong>Usage Data:</strong> Activity logs, features used, interactions with other users, ads interacted with, swipe patterns, dwell time on profiles, match preferences, and behavioural signals used for matchmaking algorithms. Also metadata for spam detection, fraud prevention, and bot identification such as abnormal usage patterns, repeated failed login attempts, or unusual interaction frequency.</li>
+      <li><strong>Technical Data:</strong> IP address, device ID and type, app settings, crash data, advertising identifiers (IDFA/AAID), and diagnostic/performance data (battery usage, network quality, crash logs). Approximate location may be derived from your IP address even without GPS permission. You may reset advertising identifiers from your device settings at any time.</li>
+    </ul>
+
+    <h3>C. Data Collected with Your Permission</h3>
+    <ul>
+      <li><strong>Geolocation Data:</strong> Precise latitude/longitude if you grant permission. Declining may limit discovery and nearby-user features. Approximate location may still be derived from your IP address for safety and fraud-prevention purposes. You may withdraw geolocation permission at any time through your device settings.</li>
+      <li><strong>Face Geometry Data:</strong> Collected for Selfie Verification to detect impersonation or fake profiles. Stored only for the verification period and deleted within 30 days unless required for safety investigations. Declining may limit access to trust badges or advanced safety features. Trusted third-party verification partners may process this data under strict contractual obligations.</li>
+      <li><strong>ID Data:</strong> Government-issued ID for identity verification, collected via upload, camera capture, or third-party KYC providers. Retained only for the period necessary for verification or compliance obligations.</li>
+    </ul>
+
+    <h3>D. Sensitive Personal Data (DPDP Act &amp; GDPR)</h3>
+    <p>We collect and process sensitive information only with your explicit consent, including:</p>
+    <ul>
+      <li>Gender, sexual orientation, and relationship preferences</li>
+      <li>Biometric or facial data (for identity or photo verification)</li>
+      <li>Communication content within chats (end-to-end encrypted where possible)</li>
+      <li>Optional health or lifestyle information (if voluntarily shared)</li>
+    </ul>
+    <p>We do not use sensitive data for advertising, cross-platform marketing, or any purpose not expressly stated in this Policy. You may refuse to provide sensitive personal data; however, certain personalised features may not function fully. You may withdraw consent at any time via account settings. Withdrawal does not affect processing already lawfully carried out.</p>
+    <p>We do not collect financial or criminal record data unless necessary for verified identity programs or required by law.</p>
+  </div>
+
+  <div class="section">
+    <h2>4. Why and How We Use Your Data</h2>
+    <p>We use your information to:</p>
+    <ul>
+      <li>Provide, maintain, and improve our Service, including matchmaking and personalisation.</li>
+      <li>Keep all Users safe and secure while using our Services.</li>
+      <li>Show relevant ads without using sensitive personal data for advertising or marketing purposes.</li>
+      <li>Create and maintain your account and platform features.</li>
+      <li>Organise sweepstakes and contests.</li>
+      <li>Respond to your requests and questions.</li>
+      <li>Monitor service functioning, troubleshoot, and fix issues.</li>
+      <li>Enable purchases, process payments, and offer discounts or promotions.</li>
+      <li>Facilitate matchmaking and recommendation algorithms.</li>
+      <li>Run, measure, and improve advertising and marketing campaigns.</li>
+      <li>Conduct research, including developing new features using machine learning (using anonymised or pseudonymised data only).</li>
+      <li>Prevent, detect, and fight fraud, abuse, and violations of our Terms — including preventing re-registration by banned users.</li>
+      <li>Verify identity and secure payments against financial fraud.</li>
+      <li>Comply with legal obligations, respond to lawful law enforcement requests, and defend legal claims.</li>
+      <li>Enable messaging, in-app interactions, and personalised content suggestions.</li>
+    </ul>
+    <p>We do not sell your personal data to advertisers or third parties. Sensitive personal data is never used for targeted advertising.</p>
+    <p><strong>Legal grounds for processing include:</strong> performance of contract, your consent, our legitimate interests (service improvement, safety, and promoting the platform), protection of vital interests, and compliance with legal obligations.</p>
+  </div>
+
+  <div class="section">
+    <h2>5. Consent</h2>
+    <p>By registering, you consent to our processing of your personal and sensitive personal data for the purposes described. Consent is free, specific, informed, unconditional, and unambiguous as required under the DPDP Act, 2023.</p>
+    <p>Sensitive personal data (including sexual orientation, relationship preferences, gender identity, biometric/face verification data, and optional lifestyle information) is processed only based on your explicit consent under Section 7 of the Act. You are not required to provide sensitive personal data unless you choose to enable features that rely on it.</p>
+    <p>You may withdraw consent anytime via your account settings or by contacting us. Withdrawal may limit access to certain features but will not affect processing already lawfully carried out. Refusal of consent for optional processing will not affect your ability to use core functions of the Service.</p>
+    <p>If we transfer your personal data outside of India, we obtain your consent where required and ensure compliance with applicable transfer safeguards. We maintain a record of your consents, withdrawals, and preferences for compliance and audit purposes.</p>
+  </div>
+
+  <div class="section">
+    <h2>6. Data Storage &amp; Retention</h2>
+    <p>Data is stored on secure cloud servers in India and, where applicable, in other jurisdictions with adequate data protection (e.g., the EU). Transfers outside India occur with appropriate legal safeguards including Standard Contractual Clauses. We do not retain personal data in perpetuity. Inactive accounts may be deleted after 2 years of non-use, following notice to the User. Upon expiry of retention periods, data is securely erased, anonymised, or aggregated.</p>
+
+    <table>
+      <tr>
+        <th>Data Category</th>
+        <th>Retention Period</th>
+      </tr>
+      <tr><td>Account Information</td><td>Duration of active account</td></tr>
+      <tr><td>Verification Selfies / Biometric Data</td><td>Verification period; deleted within 30 days</td></tr>
+      <tr><td>Chat / Message Data</td><td>Limited period for safety purposes</td></tr>
+      <tr><td>Abuse Reports / Moderation Logs</td><td>Retained to prevent repeat violations</td></tr>
+      <tr><td>Payment Records</td><td>As required under applicable financial laws</td></tr>
+      <tr><td>Crash Logs &amp; Diagnostics</td><td>Up to 12 months</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>7. Cross-Border Data Transfer</h2>
+    <p>We may transfer data outside your country of residence (including to the EU or US) for processing, hosting, or backup purposes. Such transfers occur only to countries or entities offering adequate data protection, or under standard contractual clauses, binding corporate rules, or User consent (GDPR Article 46). For Indian Users, cross-border transfer complies with Section 16 of the DPDP Act, 2023.</p>
+    <p>All entities receiving your data are contractually obligated to apply the same level of protection required under this Policy, the DPDP Act, and the GDPR. Transfers include safeguards such as encryption, limited access, audit rights, purpose limitation, and restrictions on onward transfers. We maintain records of all cross-border transfers and periodically review them for compliance.</p>
+  </div>
+
+  <div class="section">
+    <h2>8. Data Sharing &amp; Disclosure</h2>
+    <p>We do not sell or rent User data, nor share it with third parties for their own independent marketing or commercial purposes. We may share limited data only:</p>
+    <ul>
+      <li>With verified vendors or service providers (hosting, analytics, security, identity verification).</li>
+      <li>With law enforcement or government authorities where required by law, court order, or in cases of imminent harm.</li>
+      <li>With third parties during mergers, acquisitions, or restructuring — under confidentiality obligations and solely for the services they provide to us.</li>
+    </ul>
+    <p>All third parties are bound by Data Processing Agreements (DPAs), confidentiality obligations, strict security controls, and data minimisation requirements. They must delete or return data upon completion of services.</p>
+  </div>
+
+  <div class="section">
+    <h2>9. User Rights</h2>
+    <p>All Users have the right to:</p>
+    <ul>
+      <li>Access and receive a copy of their personal data.</li>
+      <li>Correct or update inaccurate or incomplete data.</li>
+      <li>Request deletion or erasure of personal data.</li>
+      <li>Withdraw consent to processing.</li>
+      <li>Object to or request that we stop processing personal data.</li>
+      <li>Raise a grievance and receive a response within 7 days (DPDP-compliant).</li>
+      <li>Appeal our decision and escalate to regulatory authorities.</li>
+      <li>Nominate an individual to exercise rights in the event of death or incapacity (Section 14, DPDP Act).</li>
+      <li>Lodge grievances with the Data Protection Board of India.</li>
+    </ul>
+
+    <h3>Additional Rights for EU Users (GDPR)</h3>
+    <ul>
+      <li>Data portability (receive a copy in structured format).</li>
+      <li>Object to automated processing or profiling.</li>
+      <li>File a complaint with your local supervisory authority.</li>
+    </ul>
+
+    <h3>Additional Rights for California Residents (CCPA)</h3>
+    <ul>
+      <li>Request disclosure of data collected and shared.</li>
+      <li>Request deletion and correction of personal information.</li>
+      <li>Opt out of "sale" or "sharing" of data.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>10. Cookies &amp; Tracking Technologies</h2>
+    <p>We use cookies, web beacons, and analytics tools to improve website performance, personalise recommendations, and monitor safety and detect suspicious activity. Essential cookies cannot be disabled as they are necessary for site functionality. You may manage or withdraw consent for non-essential cookies through your browser, device settings, or in-app cookie controls where available. Consent for cookies is as easy to withdraw as it is to give.</p>
+  </div>
+
+  <div class="section">
+    <h2>11. Security Practices</h2>
+    <p>We employ industry-standard technical and organisational security measures including:</p>
+    <ul>
+      <li>End-to-end encryption for chats and encryption at rest for stored data where applicable.</li>
+      <li>HTTPS and TLS protection for all data transmission.</li>
+      <li>Access controls, firewalls, and intrusion monitoring.</li>
+      <li>Regular audits and vulnerability assessments.</li>
+      <li>Zero-trust security architecture with strict role-based access controls (RBAC).</li>
+      <li>Multi-factor authentication and credential-security standards for internal systems.</li>
+      <li>Continuous monitoring for bot attacks, suspicious behaviour, deepfake attempts, and fraudulent activity.</li>
+      <li>Vendor and third-party security reviews to ensure equivalent protections across processors.</li>
+      <li>Employee confidentiality agreements and mandatory security training.</li>
+    </ul>
+    <p>No method of transmission over the Internet is 100% secure. We encourage Users to exercise caution when sharing personal or sensitive information on the Platform. In the event of a data breach, we will notify affected Users and relevant authorities including the Data Protection Board of India, as required by applicable law.</p>
+  </div>
+
+  <div class="section">
+    <h2>12. Children's Data</h2>
+    <p>Our platform is not intended for users under 18 years of age. If we become aware that a minor has registered, we will immediately delete their data and disable the account in compliance with the DPDP Act 2023 and COPPA (US). Where required by law, we report child sexual abuse material (CSAM) or other child-safety concerns to law-enforcement authorities and relevant agencies. Underage accounts detected are permanently blocked to prevent re-registration.</p>
+  </div>
+
+  <div class="section">
+    <h2>13. Automated Decision-Making &amp; Profiling</h2>
+    <p>We may use algorithms to suggest matches and moderate content. Sensitive personal data (e.g. sexual orientation, gender identity, biometric data) is used in automated systems only with your explicit consent and solely for matchmaking and safety-related purposes. These decisions do not have legal or significant effects and are always subject to User control and reporting mechanisms.</p>
+  </div>
+
+  <div class="section">
+    <h2>14. Grievance Redressal &amp; Data Protection Officer</h2>
+    <p>In compliance with Rule 3(2) of the IT Rules 2021 and Section 11 of the DPDP Act, 2023, we have appointed both a Grievance Officer and a Data Protection Officer (DPO).</p>
+
+    <h3>Grievance Officer</h3>
+    <ul>
+      <li><strong>Name:</strong> [To be updated]</li>
+      <li><strong>Email:</strong> grievance@withapplication.com</li>
+      <li><strong>Address:</strong> Zuntra Digital Private Limited, Developed Plot Estate, Plot No. 61, Perungudi, Chennai – 600096</li>
+    </ul>
+    <p>Complaints will be acknowledged within 24 hours and resolved within 15 days.</p>
+
+    <h3>Data Protection Officer (DPO)</h3>
+    <ul>
+      <li><strong>Name:</strong> [To be updated]</li>
+      <li><strong>Email:</strong> [To be updated]</li>
+      <li><strong>Address:</strong> Zuntra Digital Private Limited, Developed Plot Estate, Plot No. 61, Perungudi, Chennai – 600096</li>
+    </ul>
+    <p>The DPO oversees compliance with this Policy, responds to User rights requests, advises on data protection practices, and coordinates with regulators where required. Users may escalate unresolved grievances to the Data Protection Board of India under the DPDP Act, 2023.</p>
+  </div>
+
+  <div class="section">
+    <h2>15. Updates to This Policy</h2>
+    <p>We may modify this Privacy Policy from time to time to reflect changes in law or practices. We will notify you via email, in-app notice, or website banner before material updates take effect. Your continued use of the App after such changes constitutes acceptance.</p>
+  </div>
+
+  <div class="section">
+    <h2>Annexure A – Data Retention Schedule</h2>
+    <p>This Data Retention Schedule is prepared in compliance with the Digital Personal Data Protection Act, 2023, the Information Technology Act, 2000 and allied Rules, the General Data Protection Regulation (EU), the California Consumer Privacy Act (CCPA/CPRA), and all other applicable sectoral and cybersecurity laws. Retention periods are determined based on statutory mandates, contractual obligations, operational necessity, safety and fraud-prevention requirements, and legitimate business purposes. Where multiple laws apply, the longest legally permissible retention period is followed.</p>
+
+    <table>
+      <tr>
+        <th>Data Category</th>
+        <th>Retention Period</th>
+        <th>Legal Basis</th>
+      </tr>
+      <tr><td>Account &amp; Profile Data</td><td>Duration of active account; up to 2 years after inactivity</td><td>Contract performance; legitimate interest</td></tr>
+      <tr><td>Biometric / Face Geometry Data</td><td>Deleted within 30 days of verification</td><td>Explicit consent; DPDP Act, GDPR</td></tr>
+      <tr><td>Government ID / KYC Data</td><td>Verification period + compliance obligations</td><td>Legal obligation; legitimate interest</td></tr>
+      <tr><td>Chat / Message Data</td><td>Limited period for safety purposes</td><td>Safety; legal obligation</td></tr>
+      <tr><td>Abuse Reports / Moderation Logs</td><td>Up to 24 months or longer if legally required</td><td>Safety; legal obligation</td></tr>
+      <tr><td>Payment &amp; Transaction Records</td><td>As required under applicable financial laws</td><td>Legal obligation</td></tr>
+      <tr><td>Usage &amp; Activity Logs</td><td>Up to 12 months</td><td>Legitimate interest</td></tr>
+      <tr><td>Crash Logs &amp; Diagnostics</td><td>Up to 12 months</td><td>Legitimate interest</td></tr>
+      <tr><td>Marketing &amp; Survey Data</td><td>Until consent withdrawn or purpose fulfilled</td><td>Consent</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Contact Us</h2>
+    <p>
+      <strong>Wiviy</strong><br>
+      Zuntra Digital Private Limited<br>
+      Developed Plot Estate, Plot No. 61, Perungudi<br>
+      Chennai – 600096, Tamil Nadu, India<br>
+      Email: <a href="mailto:info@withapplication.com">info@withapplication.com</a>
+    </p>
+  </div>
+
+</div>
+</div><!-- end page-privacy -->
+
+
+<!-- ══════════════════════════════════════════
+     TERMS OF USE
+══════════════════════════════════════════ -->
+<div class="page" id="page-terms">
+<div class="container">
+
+  <h1>Terms of Use</h1>
+  <p class="meta"><strong>Last Updated:</strong> April 2026</p>
+
+  <p>These Terms of Use ("Terms") govern your use of the Wiviy mobile application and website operated by <strong>Zuntra Digital Private Limited</strong>.</p>
+
+  <div class="section">
+    <h2>1. Acceptance of Terms</h2>
+    <p>By accessing or using Wiviy, you agree to these Terms and our Privacy Policy. If you do not agree, you must stop using the platform immediately.</p>
+    <p>These Terms form a legally binding agreement under the Information Technology Act, 2000.</p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>2. Eligibility</h2>
+    <ul>
+      <li>You must be at least <strong>18 years old</strong></li>
+      <li>You must provide accurate information</li>
+      <li>You must not be banned from the platform</li>
+    </ul>
+    <p>We reserve the right to suspend or remove accounts that violate eligibility rules.</p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>3. Account &amp; Verification</h2>
+    <p>You must register using a valid mobile number (OTP verification required).</p>
+    <p>You are responsible for maintaining account security.</p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>4. Platform Purpose</h2>
+    <p>Wiviy is a social discovery and connection platform. We do not guarantee matches, relationships, or outcomes.</p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>5. User Responsibility</h2>
+    <p>All interactions are at your own risk. Always use caution.</p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>6. Acceptable Use</h2>
+    <ul>
+      <li>No harassment, abuse, or threats</li>
+      <li>No fake profiles or impersonation</li>
+      <li>No scams or financial fraud</li>
+      <li>No explicit or illegal content</li>
+      <li>No minors allowed (strict policy)</li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>7. Safety Policy</h2>
+    <p>We use moderation systems including AI and manual review to detect unsafe behavior.</p>
+    <p>However, we do not guarantee complete safety or verification of users.</p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>8. User Content</h2>
+    <p>You own your content but grant us a license to use it to operate the platform.</p>
+    <p>We may remove content that violates our policies.</p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>9. Privacy</h2>
+    <p>We process your data according to our <a href="#" onclick="showTab('privacy'); return false;">Privacy Policy</a> and applicable laws.</p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>10. Termination</h2>
+    <p>We may suspend or delete your account for violations without notice.</p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>11. No Background Checks</h2>
+    <p>We do not conduct criminal background checks. Users must take responsibility for interactions.</p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>12. Limitation of Liability</h2>
+    <p>Wiviy is not responsible for:</p>
+    <ul>
+      <li>User behavior</li>
+      <li>Offline interactions</li>
+      <li>Losses or damages</li>
+    </ul>
+    <p>Maximum liability is limited to INR 100.</p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>13. Intellectual Property</h2>
+    <p>All platform content belongs to Wiviy. Unauthorized use is prohibited.</p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>14. Grievance Officer</h2>
+    <p>Email: <a href="mailto:Grievance@withapplication.com">Grievance@withapplication.com</a></p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>15. Governing Law</h2>
+    <p>These Terms are governed by Indian law.</p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>16. Contact</h2>
+    <p>
+      <strong>Wiviy</strong><br>
+      Zuntra Digital Private Limited<br>
+      Developed Plot Estate, Plot No. 61, Perungudi<br>
+      Chennai – 600096, Tamil Nadu, India<br>
+      Email: <a href="mailto:info@withapplication.com">info@withapplication.com</a>
+    </p>
+  </div>
+
+</div>
+</div><!-- end page-terms -->
+
+<script>
+function showTab(tab) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('page-' + tab).classList.add('active');
+  const btns = document.querySelectorAll('.tab-btn');
+  if (tab === 'privacy') btns[0].classList.add('active');
+  if (tab === 'terms')   btns[1].classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>

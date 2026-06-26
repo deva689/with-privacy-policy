@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Legal - Wiviy</title>
+<title>Terms of Use – Wiviy</title>
 
 <style>
 *{
@@ -44,6 +44,7 @@ body{
   margin-right:36px;
   padding:18px 0;
   white-space:nowrap;
+  text-decoration:none;
 }
 
 .tab-btn{
@@ -58,6 +59,8 @@ body{
   cursor:pointer;
   transition:color 0.2s, border-color 0.2s;
   white-space:nowrap;
+  text-decoration:none;
+  display:inline-block;
 }
 
 .tab-btn:hover{
@@ -71,12 +74,7 @@ body{
 
 /* ── Page Content ── */
 .page{
-  display:none;
   padding:48px 40px;
-}
-
-.page.active{
-  display:block;
 }
 
 .container{
@@ -173,15 +171,6 @@ tr:nth-child(even) td{
   background:#f5fdfb;
 }
 
-.notice{
-  background:#e8f8f5;
-  border-left:4px solid #0d9b8a;
-  padding:16px 20px;
-  margin:20px 0;
-  font-size:16px;
-  border-radius:0 6px 6px 0;
-}
-
 .meta{
   font-family: Arial, sans-serif;
   font-size:15px;
@@ -197,6 +186,18 @@ hr{
   border:none;
   border-top:1px solid #e0f4f1;
   margin:8px 0;
+}
+
+.uppercase-block{
+  font-size:15px;
+  font-family: Arial, sans-serif;
+  color:#2c2c2c;
+  background:#f5fdfb;
+  border:1px solid #cde8e4;
+  padding:16px 20px;
+  margin:12px 0;
+  border-radius:4px;
+  line-height:1.7;
 }
 
 @media(max-width:768px){
@@ -216,360 +217,181 @@ hr{
 
 <!-- Tab Navigation -->
 <div class="tab-bar">
-  <div class="brand">Wiviy</div>
-  <button class="tab-btn active" onclick="showTab('privacy')">Privacy Policy</button>
-  <button class="tab-btn" onclick="showTab('terms')">Terms of Use</button>
+  <a class="brand" href="privacy.html">Wiviy</a>
+  <a class="tab-btn" href="privacy.html">Privacy Policy</a>
+  <a class="tab-btn active" href="terms.html">Terms of Use</a>
 </div>
 
-<!-- ══════════════════════════════════════════
-     PRIVACY POLICY
-══════════════════════════════════════════ -->
-<div class="page active" id="page-privacy">
-<div class="container">
-
-  <h1>Privacy Policy</h1>
-  <p class="meta">
-    <strong>Last Updated:</strong> December 2, 2025 &nbsp;|&nbsp;
-    <strong>Applies To:</strong> Users of WIVIY operated by <strong>Zuntra Digital Private Limited</strong> ("we", "us", "our")
-  </p>
-
-  <div class="notice">
-    Wiviy is intended only for users aged <strong>18 years or older</strong>.
-  </div>
-
-  <div class="section">
-    <h2>1. Introduction</h2>
-    <p>Your privacy is important to us. This Privacy Policy explains how WIVIY collects, uses, stores, shares, and protects your personal data when you use our website, mobile application, or related services (collectively, the "Platform").</p>
-    <p>By using the Platform, you consent to this Policy and our compliance with:</p>
-    <ul>
-      <li>Digital Personal Data Protection Act, 2023 (India)</li>
-      <li>Information Technology Act &amp; Rules (India)</li>
-      <li>General Data Protection Regulation (EU)</li>
-      <li>California Consumer Privacy Act (US)</li>
-    </ul>
-    <p>If you do not agree with this Policy, please discontinue use of the Platform.</p>
-  </div>
-
-  <div class="section">
-    <h2>2. Scope</h2>
-    <p>This Policy applies to:</p>
-    <ul>
-      <li>All registered users, visitors, and subscribers ("Users").</li>
-      <li>All personal data and sensitive personal data that we collect, whether online or offline.</li>
-      <li>Websites, apps, events and other services we operate under the WIVIY brand globally ("Service" and/or "Services").</li>
-    </ul>
-    <p>This Policy applies globally. Indian users are protected under the DPDP Act, 2023. Users in the EU, UK, or California are additionally protected under GDPR, UK-GDPR, and CCPA respectively.</p>
-  </div>
-
-  <div class="section">
-    <h2>3. Data We Collect</h2>
-    <p>We collect personal data and usage information to operate the Platform, enable matchmaking, ensure user safety, verify identities, personalise your experience, and provide core communication features. We may also receive information about you from third parties such as Google, Facebook, or Apple sign-in, verification partners, or analytics providers. This data is collected and processed strictly for the purposes outlined in this Privacy Policy and in accordance with the DPDP Act 2023, GDPR, CCPA, and applicable international laws.</p>
-
-    <h3>A. Data You Give Us</h3>
-    <ul>
-      <li><strong>Account Data:</strong> Phone number, email address, and date of birth when you create an account.</li>
-      <li><strong>Profile Data:</strong> Gender, interests, preferences, approximate location, and other details. Some data may be considered sensitive (e.g. sexual orientation, health, racial or ethnic origins, religious or political beliefs). Providing such data constitutes your consent to its use as described here.</li>
-      <li><strong>Content:</strong> Photos, videos, audio, text, and chats shared while using the Service.</li>
-      <li><strong>Purchase Data:</strong> Transaction details including what was purchased, date, and price. Payment card or financial data if paying directly with us.</li>
-      <li><strong>Marketing, Survey and Research Data:</strong> Information provided when participating in surveys, focus groups, promotions, or contests.</li>
-      <li><strong>Third-Party Data:</strong> Information about others you share with us (e.g. contact details used for a feature, or reports involving another member).</li>
-      <li><strong>Customer Support Data:</strong> Information provided when contacting us, including reports filed by or about you, and data collected during moderation investigations. If you were banned from another Zuntra Digital service, your data may be shared with us to take necessary actions. Where legally allowed, we may also receive information about suspected or convicted bad actors from third parties.</li>
-    </ul>
-
-    <h3>B. Data Generated or Automatically Collected</h3>
-    <ul>
-      <li><strong>Usage Data:</strong> Activity logs, features used, interactions with other users, ads interacted with, swipe patterns, dwell time on profiles, match preferences, and behavioural signals used for matchmaking algorithms. Also metadata for spam detection, fraud prevention, and bot identification such as abnormal usage patterns, repeated failed login attempts, or unusual interaction frequency.</li>
-      <li><strong>Technical Data:</strong> IP address, device ID and type, app settings, crash data, advertising identifiers (IDFA/AAID), and diagnostic/performance data (battery usage, network quality, crash logs). Approximate location may be derived from your IP address even without GPS permission. You may reset advertising identifiers from your device settings at any time.</li>
-    </ul>
-
-    <h3>C. Data Collected with Your Permission</h3>
-    <ul>
-      <li><strong>Geolocation Data:</strong> Precise latitude/longitude if you grant permission. Declining may limit discovery and nearby-user features. Approximate location may still be derived from your IP address for safety and fraud-prevention purposes. You may withdraw geolocation permission at any time through your device settings.</li>
-      <li><strong>Face Geometry Data:</strong> Collected for Selfie Verification to detect impersonation or fake profiles. Stored only for the verification period and deleted within 30 days unless required for safety investigations. Declining may limit access to trust badges or advanced safety features. Trusted third-party verification partners may process this data under strict contractual obligations.</li>
-      <li><strong>ID Data:</strong> Government-issued ID for identity verification, collected via upload, camera capture, or third-party KYC providers. Retained only for the period necessary for verification or compliance obligations.</li>
-    </ul>
-
-    <h3>D. Sensitive Personal Data (DPDP Act &amp; GDPR)</h3>
-    <p>We collect and process sensitive information only with your explicit consent, including:</p>
-    <ul>
-      <li>Gender, sexual orientation, and relationship preferences</li>
-      <li>Biometric or facial data (for identity or photo verification)</li>
-      <li>Communication content within chats (end-to-end encrypted where possible)</li>
-      <li>Optional health or lifestyle information (if voluntarily shared)</li>
-    </ul>
-    <p>We do not use sensitive data for advertising, cross-platform marketing, or any purpose not expressly stated in this Policy. You may refuse to provide sensitive personal data; however, certain personalised features may not function fully. You may withdraw consent at any time via account settings. Withdrawal does not affect processing already lawfully carried out.</p>
-    <p>We do not collect financial or criminal record data unless necessary for verified identity programs or required by law.</p>
-  </div>
-
-  <div class="section">
-    <h2>4. Why and How We Use Your Data</h2>
-    <p>We use your information to:</p>
-    <ul>
-      <li>Provide, maintain, and improve our Service, including matchmaking and personalisation.</li>
-      <li>Keep all Users safe and secure while using our Services.</li>
-      <li>Show relevant ads without using sensitive personal data for advertising or marketing purposes.</li>
-      <li>Create and maintain your account and platform features.</li>
-      <li>Organise sweepstakes and contests.</li>
-      <li>Respond to your requests and questions.</li>
-      <li>Monitor service functioning, troubleshoot, and fix issues.</li>
-      <li>Enable purchases, process payments, and offer discounts or promotions.</li>
-      <li>Facilitate matchmaking and recommendation algorithms.</li>
-      <li>Run, measure, and improve advertising and marketing campaigns.</li>
-      <li>Conduct research, including developing new features using machine learning (using anonymised or pseudonymised data only).</li>
-      <li>Prevent, detect, and fight fraud, abuse, and violations of our Terms — including preventing re-registration by banned users.</li>
-      <li>Verify identity and secure payments against financial fraud.</li>
-      <li>Comply with legal obligations, respond to lawful law enforcement requests, and defend legal claims.</li>
-      <li>Enable messaging, in-app interactions, and personalised content suggestions.</li>
-    </ul>
-    <p>We do not sell your personal data to advertisers or third parties. Sensitive personal data is never used for targeted advertising.</p>
-    <p><strong>Legal grounds for processing include:</strong> performance of contract, your consent, our legitimate interests (service improvement, safety, and promoting the platform), protection of vital interests, and compliance with legal obligations.</p>
-  </div>
-
-  <div class="section">
-    <h2>5. Consent</h2>
-    <p>By registering, you consent to our processing of your personal and sensitive personal data for the purposes described. Consent is free, specific, informed, unconditional, and unambiguous as required under the DPDP Act, 2023.</p>
-    <p>Sensitive personal data (including sexual orientation, relationship preferences, gender identity, biometric/face verification data, and optional lifestyle information) is processed only based on your explicit consent under Section 7 of the Act. You are not required to provide sensitive personal data unless you choose to enable features that rely on it.</p>
-    <p>You may withdraw consent anytime via your account settings or by contacting us. Withdrawal may limit access to certain features but will not affect processing already lawfully carried out. Refusal of consent for optional processing will not affect your ability to use core functions of the Service.</p>
-    <p>If we transfer your personal data outside of India, we obtain your consent where required and ensure compliance with applicable transfer safeguards. We maintain a record of your consents, withdrawals, and preferences for compliance and audit purposes.</p>
-  </div>
-
-  <div class="section">
-    <h2>6. Data Storage &amp; Retention</h2>
-    <p>Data is stored on secure cloud servers in India and, where applicable, in other jurisdictions with adequate data protection (e.g., the EU). Transfers outside India occur with appropriate legal safeguards including Standard Contractual Clauses. We do not retain personal data in perpetuity. Inactive accounts may be deleted after 2 years of non-use, following notice to the User. Upon expiry of retention periods, data is securely erased, anonymised, or aggregated.</p>
-
-    <table>
-      <tr>
-        <th>Data Category</th>
-        <th>Retention Period</th>
-      </tr>
-      <tr><td>Account Information</td><td>Duration of active account</td></tr>
-      <tr><td>Verification Selfies / Biometric Data</td><td>Verification period; deleted within 30 days</td></tr>
-      <tr><td>Chat / Message Data</td><td>Limited period for safety purposes</td></tr>
-      <tr><td>Abuse Reports / Moderation Logs</td><td>Retained to prevent repeat violations</td></tr>
-      <tr><td>Payment Records</td><td>As required under applicable financial laws</td></tr>
-      <tr><td>Crash Logs &amp; Diagnostics</td><td>Up to 12 months</td></tr>
-    </table>
-  </div>
-
-  <div class="section">
-    <h2>7. Cross-Border Data Transfer</h2>
-    <p>We may transfer data outside your country of residence (including to the EU or US) for processing, hosting, or backup purposes. Such transfers occur only to countries or entities offering adequate data protection, or under standard contractual clauses, binding corporate rules, or User consent (GDPR Article 46). For Indian Users, cross-border transfer complies with Section 16 of the DPDP Act, 2023.</p>
-    <p>All entities receiving your data are contractually obligated to apply the same level of protection required under this Policy, the DPDP Act, and the GDPR. Transfers include safeguards such as encryption, limited access, audit rights, purpose limitation, and restrictions on onward transfers. We maintain records of all cross-border transfers and periodically review them for compliance.</p>
-  </div>
-
-  <div class="section">
-    <h2>8. Data Sharing &amp; Disclosure</h2>
-    <p>We do not sell or rent User data, nor share it with third parties for their own independent marketing or commercial purposes. We may share limited data only:</p>
-    <ul>
-      <li>With verified vendors or service providers (hosting, analytics, security, identity verification).</li>
-      <li>With law enforcement or government authorities where required by law, court order, or in cases of imminent harm.</li>
-      <li>With third parties during mergers, acquisitions, or restructuring — under confidentiality obligations and solely for the services they provide to us.</li>
-    </ul>
-    <p>All third parties are bound by Data Processing Agreements (DPAs), confidentiality obligations, strict security controls, and data minimisation requirements. They must delete or return data upon completion of services.</p>
-  </div>
-
-  <div class="section">
-    <h2>9. User Rights</h2>
-    <p>All Users have the right to:</p>
-    <ul>
-      <li>Access and receive a copy of their personal data.</li>
-      <li>Correct or update inaccurate or incomplete data.</li>
-      <li>Request deletion or erasure of personal data.</li>
-      <li>Withdraw consent to processing.</li>
-      <li>Object to or request that we stop processing personal data.</li>
-      <li>Raise a grievance and receive a response within 7 days (DPDP-compliant).</li>
-      <li>Appeal our decision and escalate to regulatory authorities.</li>
-      <li>Nominate an individual to exercise rights in the event of death or incapacity (Section 14, DPDP Act).</li>
-      <li>Lodge grievances with the Data Protection Board of India.</li>
-    </ul>
-
-    <h3>Additional Rights for EU Users (GDPR)</h3>
-    <ul>
-      <li>Data portability (receive a copy in structured format).</li>
-      <li>Object to automated processing or profiling.</li>
-      <li>File a complaint with your local supervisory authority.</li>
-    </ul>
-
-    <h3>Additional Rights for California Residents (CCPA)</h3>
-    <ul>
-      <li>Request disclosure of data collected and shared.</li>
-      <li>Request deletion and correction of personal information.</li>
-      <li>Opt out of "sale" or "sharing" of data.</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>10. Cookies &amp; Tracking Technologies</h2>
-    <p>We use cookies, web beacons, and analytics tools to improve website performance, personalise recommendations, and monitor safety and detect suspicious activity. Essential cookies cannot be disabled as they are necessary for site functionality. You may manage or withdraw consent for non-essential cookies through your browser, device settings, or in-app cookie controls where available. Consent for cookies is as easy to withdraw as it is to give.</p>
-  </div>
-
-  <div class="section">
-    <h2>11. Security Practices</h2>
-    <p>We employ industry-standard technical and organisational security measures including:</p>
-    <ul>
-      <li>End-to-end encryption for chats and encryption at rest for stored data where applicable.</li>
-      <li>HTTPS and TLS protection for all data transmission.</li>
-      <li>Access controls, firewalls, and intrusion monitoring.</li>
-      <li>Regular audits and vulnerability assessments.</li>
-      <li>Zero-trust security architecture with strict role-based access controls (RBAC).</li>
-      <li>Multi-factor authentication and credential-security standards for internal systems.</li>
-      <li>Continuous monitoring for bot attacks, suspicious behaviour, deepfake attempts, and fraudulent activity.</li>
-      <li>Vendor and third-party security reviews to ensure equivalent protections across processors.</li>
-      <li>Employee confidentiality agreements and mandatory security training.</li>
-    </ul>
-    <p>No method of transmission over the Internet is 100% secure. We encourage Users to exercise caution when sharing personal or sensitive information on the Platform. In the event of a data breach, we will notify affected Users and relevant authorities including the Data Protection Board of India, as required by applicable law.</p>
-  </div>
-
-  <div class="section">
-    <h2>12. Children's Data</h2>
-    <p>Our platform is not intended for users under 18 years of age. If we become aware that a minor has registered, we will immediately delete their data and disable the account in compliance with the DPDP Act 2023 and COPPA (US). Where required by law, we report child sexual abuse material (CSAM) or other child-safety concerns to law-enforcement authorities and relevant agencies. Underage accounts detected are permanently blocked to prevent re-registration.</p>
-  </div>
-
-  <div class="section">
-    <h2>13. Automated Decision-Making &amp; Profiling</h2>
-    <p>We may use algorithms to suggest matches and moderate content. Sensitive personal data (e.g. sexual orientation, gender identity, biometric data) is used in automated systems only with your explicit consent and solely for matchmaking and safety-related purposes. These decisions do not have legal or significant effects and are always subject to User control and reporting mechanisms.</p>
-  </div>
-
-  <div class="section">
-    <h2>14. Grievance Redressal &amp; Data Protection Officer</h2>
-    <p>In compliance with Rule 3(2) of the IT Rules 2021 and Section 11 of the DPDP Act, 2023, we have appointed both a Grievance Officer and a Data Protection Officer (DPO).</p>
-
-    <h3>Grievance Officer</h3>
-    <ul>
-      <li><strong>Name:</strong> [To be updated]</li>
-      <li><strong>Email:</strong> grievance@withapplication.com</li>
-      <li><strong>Address:</strong> Zuntra Digital Private Limited, Developed Plot Estate, Plot No. 61, Perungudi, Chennai – 600096</li>
-    </ul>
-    <p>Complaints will be acknowledged within 24 hours and resolved within 15 days.</p>
-
-    <h3>Data Protection Officer (DPO)</h3>
-    <ul>
-      <li><strong>Name:</strong> [To be updated]</li>
-      <li><strong>Email:</strong> [To be updated]</li>
-      <li><strong>Address:</strong> Zuntra Digital Private Limited, Developed Plot Estate, Plot No. 61, Perungudi, Chennai – 600096</li>
-    </ul>
-    <p>The DPO oversees compliance with this Policy, responds to User rights requests, advises on data protection practices, and coordinates with regulators where required. Users may escalate unresolved grievances to the Data Protection Board of India under the DPDP Act, 2023.</p>
-  </div>
-
-  <div class="section">
-    <h2>15. Updates to This Policy</h2>
-    <p>We may modify this Privacy Policy from time to time to reflect changes in law or practices. We will notify you via email, in-app notice, or website banner before material updates take effect. Your continued use of the App after such changes constitutes acceptance.</p>
-  </div>
-
-  <div class="section">
-    <h2>Annexure A – Data Retention Schedule</h2>
-    <p>This Data Retention Schedule is prepared in compliance with the Digital Personal Data Protection Act, 2023, the Information Technology Act, 2000 and allied Rules, the General Data Protection Regulation (EU), the California Consumer Privacy Act (CCPA/CPRA), and all other applicable sectoral and cybersecurity laws. Retention periods are determined based on statutory mandates, contractual obligations, operational necessity, safety and fraud-prevention requirements, and legitimate business purposes. Where multiple laws apply, the longest legally permissible retention period is followed.</p>
-
-    <table>
-      <tr>
-        <th>Data Category</th>
-        <th>Retention Period</th>
-        <th>Legal Basis</th>
-      </tr>
-      <tr><td>Account &amp; Profile Data</td><td>Duration of active account; up to 2 years after inactivity</td><td>Contract performance; legitimate interest</td></tr>
-      <tr><td>Biometric / Face Geometry Data</td><td>Deleted within 30 days of verification</td><td>Explicit consent; DPDP Act, GDPR</td></tr>
-      <tr><td>Government ID / KYC Data</td><td>Verification period + compliance obligations</td><td>Legal obligation; legitimate interest</td></tr>
-      <tr><td>Chat / Message Data</td><td>Limited period for safety purposes</td><td>Safety; legal obligation</td></tr>
-      <tr><td>Abuse Reports / Moderation Logs</td><td>Up to 24 months or longer if legally required</td><td>Safety; legal obligation</td></tr>
-      <tr><td>Payment &amp; Transaction Records</td><td>As required under applicable financial laws</td><td>Legal obligation</td></tr>
-      <tr><td>Usage &amp; Activity Logs</td><td>Up to 12 months</td><td>Legitimate interest</td></tr>
-      <tr><td>Crash Logs &amp; Diagnostics</td><td>Up to 12 months</td><td>Legitimate interest</td></tr>
-      <tr><td>Marketing &amp; Survey Data</td><td>Until consent withdrawn or purpose fulfilled</td><td>Consent</td></tr>
-    </table>
-  </div>
-
-  <div class="section">
-    <h2>Contact Us</h2>
-    <p>
-      <strong>Wiviy</strong><br>
-      Zuntra Digital Private Limited<br>
-      Developed Plot Estate, Plot No. 61, Perungudi<br>
-      Chennai – 600096, Tamil Nadu, India<br>
-      Email: <a href="mailto:info@withapplication.com">info@withapplication.com</a>
-    </p>
-  </div>
-
-</div>
-</div><!-- end page-privacy -->
-
-
-<!-- ══════════════════════════════════════════
-     TERMS OF USE
-══════════════════════════════════════════ -->
-<div class="page" id="page-terms">
+<div class="page">
 <div class="container">
 
   <h1>Terms of Use</h1>
-  <p class="meta"><strong>Last Updated:</strong> April 2026</p>
+  <p class="meta">
+    <strong>Last Updated:</strong> April 2026 &nbsp;|&nbsp;
+    <strong>Applies To:</strong> All Users ("you", "your") of Wiviy ("we", "us", "our")
+  </p>
 
   <p>These Terms of Use ("Terms") govern your use of the Wiviy mobile application and website operated by <strong>Zuntra Digital Private Limited</strong>.</p>
 
   <div class="section">
     <h2>1. Acceptance of Terms</h2>
-    <p>By accessing or using Wiviy, you agree to these Terms and our Privacy Policy. If you do not agree, you must stop using the platform immediately.</p>
-    <p>These Terms form a legally binding agreement under the Information Technology Act, 2000.</p>
+    <p>By downloading, registering, or using Wiviy, you agree to these Terms of Use ("Terms") and to our Privacy Policy, Safety Policy, and Consent &amp; Data Processing Policy. If you do not agree, you must not use or access our Website/App.</p>
+    <p>These Terms constitute a legally binding electronic agreement under Section 10-A of the Information Technology Act, 2000.</p>
+    <p>We comply with the Digital Personal Data Protection Act, 2023 (India), GDPR (EU), and CCPA (US) to ensure that your consent is informed, specific, and freely given.</p>
+    <p>We reserve the right, at our discretion, to make changes to these Terms and to our Privacy Policy, Safety Policy, and Accessibility Policy at any time. Please check these Terms periodically for changes as all modifications are effective upon publication. Continued use of the Website and/or App after revision indicates the user's acceptance of the Terms and all other policies.</p>
   </div>
 
   <hr>
 
   <div class="section">
     <h2>2. Eligibility</h2>
+    <p>Wiviy is a social platform created to facilitate connections among its users. By creating an account on Wiviy you hereby warrant the following:</p>
     <ul>
-      <li>You must be at least <strong>18 years old</strong></li>
-      <li>You must provide accurate information</li>
-      <li>You must not be banned from the platform</li>
+      <li>You are an individual (i.e. not a body corporate, partnership or other business entity) at least <strong>18 years old</strong>.</li>
+      <li>You are legally competent to enter a binding contract with Wiviy.</li>
+      <li>You are not prohibited by law from using our Services.</li>
+      <li>You confirm that you are not currently convicted, accused, or under investigation for any offence involving violence, sexual misconduct, stalking, harassment, or abuse under Indian law.</li>
+      <li>You do not have more than one account on our App/Website.</li>
+      <li>You will not use our website and/or App if you have been removed from Wiviy.</li>
+      <li>You will comply with this agreement and all applicable local, state, national and international laws, rules and regulations.</li>
+      <li>You confirm that you have not been banned, suspended, or removed from any other dating, social, or matchmaking platform for misconduct.</li>
+      <li>You must provide accurate information.</li>
     </ul>
-    <p>We reserve the right to suspend or remove accounts that violate eligibility rules.</p>
+    <p>We are entitled to remove your accounts with Wiviy permanently if any of the above conditions are not met. We reserve the right to suspend or remove accounts that violate eligibility rules.</p>
   </div>
 
   <hr>
 
   <div class="section">
     <h2>3. Account &amp; Verification</h2>
-    <p>You must register using a valid mobile number (OTP verification required).</p>
-    <p>You are responsible for maintaining account security.</p>
+    <p>You must register using a valid mobile number (OTP verification required). You must create a personal account using accurate, complete, and verifiable information.</p>
+    <p>We may require identity verification through mobile number OTP, email, photo validation, or third-party authentications to maintain safety and authenticity. Identity verification may be done through OTP, selfie verification, or voluntary government ID checks, in compliance with applicable law. Aadhaar is accepted only voluntarily and not stored.</p>
+    <p>You are responsible for maintaining account security. If you feel your account has been compromised, contact us requesting removal from your registered mobile number or email address.</p>
+    <p>You agree not to impersonate any person or entity or misrepresent your identity or age. No individual below 18 years may use the App. No photos containing minors (even family members) may be uploaded. Any suspected minor account will be immediately suspended and reported as required under law. Providing false information may lead to account suspension or permanent termination.</p>
+    <p>By registering for Wiviy, you grant us permission to send you SMS notifications about your profile-related activities.</p>
   </div>
 
   <hr>
 
   <div class="section">
     <h2>4. Platform Purpose</h2>
-    <p>Wiviy is a social discovery and connection platform. We do not guarantee matches, relationships, or outcomes.</p>
+    <p>Wiviy is a social discovery and connection platform designed to enable individuals to discover, connect, and communicate with one another based on shared interests and preferences. We do not guarantee any specific outcomes, matches, relationships, or compatibility results. All interactions are voluntary and at the users' own discretion and risk.</p>
   </div>
 
   <hr>
 
   <div class="section">
-    <h2>5. User Responsibility</h2>
-    <p>All interactions are at your own risk. Always use caution.</p>
+    <h2>5. Matchmaking &amp; Disclaimer of Guarantees</h2>
+    <p>Match suggestions are algorithm-based on profile inputs and preferences. Wiviy does not conduct criminal background checks, identity verification, or screening of Users beyond reasonable checks. All profile information is self-reported by Users. We disclaim liability for misrepresentation, impersonation, or false identity provided by any User.</p>
+    <p>Wiviy is not a marriage brokerage service and assumes no responsibility for users' personal decisions, offline interactions, or relationship outcomes. Users are advised to exercise reasonable caution and avoid sharing financial or sensitive personal information with other users.</p>
   </div>
 
   <hr>
 
   <div class="section">
-    <h2>6. Acceptable Use</h2>
+    <h2>6. Acceptable Use Policy</h2>
+    <p>You agree to use the App only for lawful and respectful purposes. You agree that you will not:</p>
     <ul>
-      <li>No harassment, abuse, or threats</li>
-      <li>No fake profiles or impersonation</li>
-      <li>No scams or financial fraud</li>
-      <li>No explicit or illegal content</li>
-      <li>No minors allowed (strict policy)</li>
+      <li>Misrepresent your identity, age, or affiliations with a person or entity.</li>
+      <li>Use the Services in a way that damages the Services or prevents their use by other users.</li>
+      <li>Use our Services in a way to interfere with, disrupt, or negatively affect the platform, the servers, or our Services' networks.</li>
+      <li>Use our Services for any harmful, illegal, or nefarious purpose, including money laundering or other financial crimes.</li>
+      <li>Post, upload, or transmit any content that is abusive, obscene, defamatory, hateful, pornographic, sexually explicit, or otherwise unlawful under Indian law.</li>
+      <li>Upload images containing minors (even in the background). Any such content will be removed and reported as required by law.</li>
+      <li>Harass, bully, stalk, threaten, assault, defame, harm, intimidate or otherwise abuse or cause psychological harm to any user.</li>
+      <li>Solicit passwords, personal identifying information for commercial or unlawful purposes, money, sexual favors, or engage in commercial prostitution, escort, or trafficking activities.</li>
+      <li>Use another user's account.</li>
+      <li>Use our Services in relation to fraud, a pyramid scheme, or other similar practice.</li>
+      <li>Use our Services in relation to any political campaign financing or for the purpose of influencing any election.</li>
+      <li>Disclose private or proprietary information that you do not have the right to disclose.</li>
+      <li>Copy, modify, transmit, distribute, or create derivative works from any Member Content or Our Content, or any copyrighted material without Wiviy's prior written consent.</li>
+      <li>Use any robot, crawler, site search/retrieval application, proxy or other automated device, method or process to access, retrieve, index, "data mine", or circumvent the navigational structure of our Services.</li>
+      <li>Upload viruses or other malicious code or otherwise compromise the security of our Services.</li>
+      <li>Share external links, phishing URLs, malicious websites, or third-party platforms intended for fraud, exploitation, or solicitation.</li>
+      <li>Use meta tags or code containing any reference to Wiviy to direct any person to any other website.</li>
+      <li>Modify, adapt, sublicense, translate, sell, reverse engineer, decipher, decompile or otherwise disassemble any portion of our Services.</li>
+      <li>Use or develop any third-party applications that interact with our Services or Member Content without our written consent, including artificial intelligence or machine learning systems.</li>
+      <li>Request or share OTPs, bank details, UPI IDs, passwords, financial credentials, or engage in any financial solicitation.</li>
+      <li>Probe, scan or test the vulnerability of our Services or any system or network.</li>
+      <li>Use screenshots or chat content to threaten, coerce, shame, extort, or defame any User.</li>
+      <li>Use the Platform for religious proselytisation, political persuasion, or community mobilisation.</li>
+      <li>Submit a report about a user's behaviour or content that is false, misleading, or otherwise manifestly unfounded.</li>
+      <li>Create a new account after we suspend or terminate your account, unless you receive our express permission.</li>
+      <li>Use the App to promote another service or compete with Wiviy.</li>
+      <li>Encourage, promote, or agree to engage in any activity that violates these Terms.</li>
     </ul>
+    <p>The license granted to you under these Terms is automatically revoked if you do any of the above. Violation of this policy may result in immediate account termination and reporting to law enforcement authorities.</p>
   </div>
 
   <hr>
 
   <div class="section">
-    <h2>7. Safety Policy</h2>
-    <p>We use moderation systems including AI and manual review to detect unsafe behavior.</p>
-    <p>However, we do not guarantee complete safety or verification of users.</p>
+    <h2>Community Guidelines</h2>
+    <p>Wiviy is a community built on respect, safety, and meaningful connection. Every person who joins our platform deserves a space where they can interact without fear of harassment, discrimination, or misuse. By using Wiviy, you agree to uphold these standards and conduct yourself with dignity, honesty, and kindness.</p>
+    <p>These Guidelines apply to all users, visitors, interactions, messages, and content shared on the platform. They also govern how Wiviy manages safety, moderation, inclusion, reporting, and cooperation with law enforcement. This Policy forms an essential part of our Terms of Use, Privacy Policy and other policies.</p>
+    <p>Wiviy is committed to maintaining a community where everyone feels welcome. We do not tolerate harassment, stalking, threats, intimidation, hate speech, or any form of non-consensual sexual behaviour. Discrimination of any kind is prohibited, including discrimination based on gender, gender identity or expression, sexual orientation, caste, race, ethnicity, colour, nationality, religion, disability, age, health condition, marital status, or family status. Every user on Wiviy is entitled to equal dignity, equal access, and equal respect.</p>
+    <p>We celebrate diversity, including LGBTQ+ users, and are committed to creating an environment where all identities can be expressed safely. The app provides inclusive gender and orientation options, and our moderation systems actively identify and remove homophobic, transphobic, or discriminatory content. Wiviy offers confidentiality features and ensures that all sensitive identity data such as sexual orientation or gender identity is treated as sensitive personal data under the DPDP Act, 2023 and global privacy standards.</p>
+    <p>Certain behaviours are strictly prohibited, including: sharing obscene or pornographic material, sending unwanted sexual messages, threatening or abusive communication, impersonation or the creation of fake profiles, attempting to deceive users through edited or AI-generated images, blackmail or extortion, non-consensual sharing of private images, "outing" someone's identity, or engaging in hate-driven or discriminatory conduct. Content involving minors is treated with zero tolerance and may be reported to law enforcement.</p>
+    <p>We strictly prohibit retaliation or victimisation against any user who reports discrimination in good faith. Any such retaliation will result in disciplinary action, including permanent removal and potential legal referral.</p>
+
+    <h3>Local Jurisdictional Restrictions</h3>
+    <p>We operate globally but comply with local laws and content regulations in all jurisdictions. In countries where LGBTQ+ expression or same-sex relationships are restricted, we may limit visibility or apply safety filters to protect User safety. Users in such regions will receive clear notice of any functionality restrictions. We will never share User identity or sensitive data with third parties or authorities without lawful compulsion and due process review.</p>
+
+    <h3>Reporting Abuse, Discrimination, Bias or Misconduct</h3>
+    <p>If you experience or witness harassment, discrimination, impersonation, abusive behaviour, hate speech, fraud, or any form of misconduct on the Platform, you may report it using the in-app reporting tools or by email. All reports are treated confidentially and reviewed by our trained Safety &amp; Diversity Team.</p>
+    <p><strong>1. In-App Reporting Tools:</strong> Use the "Report User" or "Report Message" option available on profiles or chat screens. Choose a relevant category such as harassment, hate speech, fake profile, scam, inappropriate content, or identity misuse.</p>
+    <p><strong>2. Email Reporting:</strong> If you cannot access the app, you may email us at <a href="mailto:grievance@withapplication.com">grievance@withapplication.com</a> using your registered email address.</p>
+    <p><strong>Emergency Situations:</strong> If you believe you are in immediate danger, please contact local law enforcement (100 / 112 in India). You may also notify us so that we can take appropriate safety action and cooperate with authorities where legally required.</p>
+
+    <h3>Our Response Process (Takedown Policy)</h3>
+    <p>Wiviy complies with the Information Technology Act, 2000 and the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021. All reports are acknowledged within 24 hours. Our team will review the report within 72 hours and conduct a full investigation within 5–7 working days. Appropriate actions will be taken within 10 working days of receiving the report.</p>
+
+    <table>
+      <tr>
+        <th>Stage</th>
+        <th>Action</th>
+        <th>Timeline (Indicative)</th>
+      </tr>
+      <tr><td>Acknowledgement</td><td>We acknowledge receipt of your report.</td><td>Within 24 hours</td></tr>
+      <tr><td>Initial Review</td><td>Our Safety Team reviews the report for clarity, urgency, and legal relevance.</td><td>Within 72 hours</td></tr>
+      <tr><td>Investigation</td><td>We assess evidence, message logs (if applicable), and behavioural history.</td><td>Within 5–7 working days</td></tr>
+      <tr><td>Action Taken</td><td>Actions may include: warning, suspension, permanent ban, or law enforcement referral.</td><td>Within 10 working days of report receipt</td></tr>
+      <tr><td>User Notification</td><td>You will receive confirmation that the issue has been addressed (subject to privacy restrictions).</td><td>Within 15 working days total</td></tr>
+    </table>
+
+    <p>In cases involving child sexual abuse material (CSAM), suicide or self-harm threats, imminent threats to life, or sexual exploitation, Wiviy may take immediate action including instant content removal, emergency account suspension, or law enforcement escalation, irrespective of usual timelines.</p>
   </div>
 
   <hr>
 
   <div class="section">
-    <h2>8. User Content</h2>
-    <p>You own your content but grant us a license to use it to operate the platform.</p>
+    <h2>7. Harassment &amp; Safety Policy</h2>
+    <p>Wiviy prohibits uploading or sharing content that:</p>
+    <ul>
+      <li>Could reasonably be deemed to harass, abuse or cause psychological distress to another person.</li>
+      <li>Is obscene, pornographic, violent or contains nudity.</li>
+      <li>Is abusive, threatening, discriminatory or promotes or encourages racism, sexism, hatred or bigotry.</li>
+      <li>Encourages or facilitates any illegal activity including terrorism or inciting racial hatred.</li>
+      <li>Encourages or facilitates any activity that may result in harm, including promotion of self-harm, eating disorders, dangerous challenges, or violent extremism.</li>
+      <li>Is defamatory, libelous, or untrue.</li>
+      <li>Relates to commercial activities including sales, competitions, promotions, advertising, solicitation for services, sex work, or "sugar daddy"/"sugar baby" relationships.</li>
+      <li>Involves or facilitates the transmission of spam.</li>
+      <li>Contains spyware, adware, viruses, corrupt files, worm programs or other malicious code.</li>
+      <li>Infringes upon any third party's rights including intellectual property rights and privacy rights.</li>
+      <li>Involves uploading, sharing, or depicting minors in any form. Any such content will be removed and may be reported to law enforcement under the POCSO Act and IT Act.</li>
+      <li>May harm the reputation of Wiviy or its affiliates.</li>
+    </ul>
+    <p>We use moderation systems including AI and manual review to detect unsafe behaviour. However, we do not guarantee complete safety or verification of users.</p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>8. User Content &amp; License</h2>
+    <p>You retain ownership of content you upload (photos, texts, bios). You are responsible for your content and must not share anything that would violate these Terms or expose you or us to legal liability.</p>
+    <p>By uploading content, you grant Wiviy a limited, revocable, non-exclusive, royalty-free license to host, display, process, and use such content solely for the purpose of operating, improving, securing, and moderating the Platform. This license automatically ends when you delete your content or your account, except where retention is required by law or for the resolution of disputes.</p>
+    <p>You also grant to Wiviy a worldwide, perpetual, transferable, sub-licensable, royalty-free right and license to host, store, use, copy, display, reproduce, adapt, edit, publish, translate, modify, reformat, incorporate into other works, advertise, distribute and otherwise make available to the general public your content, in whole or in part, and in any way and in any format or medium currently known or developed in the future. Wiviy's license to your content shall be non-exclusive, except that Wiviy's license shall be exclusive with respect to derivative works created through use of our Services.</p>
+    <p>In addition, you authorise Wiviy to act on your behalf with respect to infringing uses of your content taken from our Services by other users or third parties. Wiviy is not obligated to take any action regarding use of your content by other users or third parties.</p>
     <p>We may remove content that violates our policies.</p>
   </div>
 
@@ -577,61 +399,127 @@ hr{
 
   <div class="section">
     <h2>9. Privacy</h2>
-    <p>We process your data according to our <a href="#" onclick="showTab('privacy'); return false;">Privacy Policy</a> and applicable laws.</p>
+    <p>We process your data according to our <a href="privacy.html">Privacy Policy</a> and applicable laws. By using the Platform, you acknowledge that you have read and understood our Privacy Policy and consent to data processing as described therein. All matters relating to data collection, lawful bases for processing, sensitive personal data, profiling, data sharing, retention periods, cross-border transfers, user rights, security safeguards, and breach notifications are detailed in our Privacy Policy.</p>
   </div>
 
   <hr>
 
   <div class="section">
-    <h2>10. Termination</h2>
-    <p>We may suspend or delete your account for violations without notice.</p>
+    <h2>10. Termination of Account</h2>
+
+    <h3>10.1 Termination by Wiviy</h3>
+    <p>Wiviy may suspend or permanently terminate your account, with or without notice, if you:</p>
+    <ul>
+      <li>Violate these Terms, the Privacy Policy, or the Community Guidelines.</li>
+      <li>Upload, share, or transmit illegal, obscene, harmful, or offensive content.</li>
+      <li>Engage in fraud, impersonation, catfishing, or deceptive behaviour.</li>
+      <li>Are reported for harassment, abuse, or misconduct by multiple users, or if we independently determine such behaviour through our moderation systems.</li>
+      <li>Attempt to create a new account after a previous ban.</li>
+      <li>Are found to be below 18 years of age.</li>
+      <li>Undermine platform safety or misuse the service in any manner.</li>
+      <li>Use automated tools, bots, scrapers, or engage in data harvesting.</li>
+      <li>Engage in conduct harmful to Wiviy, its users, or its reputation.</li>
+    </ul>
+    <p>Wiviy also reserves the right to take immediate action, including temporary suspension, content removal, or emergency account blocking, in accordance with the IT Rules 2021 when illegal content or safety risks are identified.</p>
+
+    <h3>10.2 Voluntary Account Deletion</h3>
+    <p>You may delete your account at any time using the in-app Delete Account option. Upon self-deletion: your profile is immediately removed from visibility; your photos, bio, preferences, and matches are scheduled for deletion; chat content may be deleted from your side (the other user may retain their copies); and metadata (device ID, IP logs) will be retained for 180 days as mandated by law. After the retention period expires, all personal data will be deleted or irreversibly anonymised unless required for fraud prevention or legal compliance.</p>
   </div>
 
   <hr>
 
   <div class="section">
     <h2>11. No Background Checks</h2>
-    <p>We do not conduct criminal background checks. Users must take responsibility for interactions.</p>
+    <p>Wiviy does not conduct criminal background checks on its users. Though Wiviy strives to encourage a respectful user experience, it is not responsible for the conduct of any user on or off the Service. Use your best judgment when interacting with others.</p>
+    <div class="uppercase-block">
+      WIVIY DOES NOT CONDUCT CRIMINAL BACKGROUND OR IDENTITY VERIFICATION CHECKS ON ITS USERS OR OTHERWISE INQUIRE INTO THE BACKGROUND OF ITS USERS. WIVIY MAKES NO REPRESENTATIONS OR WARRANTIES AS TO THE CONDUCT, IDENTITY, HEALTH, PHYSICAL CONDITION, INTENTIONS, LEGITIMACY, OR VERACITY OF USERS. WIVIY RESERVES THE RIGHT TO CONDUCT — AND YOU AUTHORISE WIVIY TO CONDUCT — ANY CRIMINAL BACKGROUND CHECK OR OTHER SCREENINGS AT ANY TIME USING AVAILABLE PUBLIC RECORDS, AND YOU AGREE THAT ANY INFORMATION YOU PROVIDE MAY BE USED FOR THAT PURPOSE. YOU ARE SOLELY RESPONSIBLE FOR YOUR INTERACTIONS WITH OTHER USERS. WE CANNOT AND DO NOT GUARANTEE YOUR SAFETY. ALWAYS USE YOUR BEST JUDGMENT AND TAKE APPROPRIATE SAFETY PRECAUTIONS WHEN COMMUNICATING WITH OR MEETING NEW PEOPLE.
+    </div>
   </div>
 
   <hr>
 
   <div class="section">
     <h2>12. Limitation of Liability</h2>
-    <p>Wiviy is not responsible for:</p>
+    <p>Wiviy acts as a digital intermediary providing a platform for social connection. We do not verify every user's identity beyond reasonable checks and cannot control user behavior outside the App.</p>
+    <div class="uppercase-block">
+      TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL WIVIY, ITS AFFILIATES, EMPLOYEES, LICENSORS, OR SERVICE PROVIDERS BE LIABLE FOR ANY INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, PUNITIVE, FIXED, OR ENHANCED DAMAGES, INCLUDING, WITHOUT LIMITATION, LOSS OF PROFITS, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM: (I) YOUR ACCESS TO OR USE OF OR INABILITY TO ACCESS OR USE THE SERVICES, (II) THE CONDUCT OR CONTENT OF ANY USERS OR THIRD PARTIES ON OR THROUGH ANY OF OUR AFFILIATES' SERVICES OR IN CONNECTION WITH THE SERVICES; OR (III) ANY UNAUTHORISED ACCESS, USE, OR ALTERATION OF YOUR CONTENT, EVEN IF WIVIY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL WIVIY'S AGGREGATE LIABILITY TO YOU FOR ALL CLAIMS RELATING TO THE SERVICES EXCEED THE GREATER OF (A) INR 100 OR (B) THE AMOUNT PAID, IF ANY, BY YOU TO WIVIY FOR THE SERVICES DURING THE TWENTY-FOUR (24) MONTH PERIOD IMMEDIATELY PRECEDING THE DATE THAT YOU FIRST FILE A LAWSUIT, ARBITRATION OR ANY OTHER LEGAL PROCEEDING AGAINST WIVIY. SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OF CERTAIN DAMAGES, SO SOME OR ALL OF THE LIMITATIONS IN THIS SECTION MAY NOT APPLY TO YOU.
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>13. Indemnity</h2>
+    <p>To the full extent permitted under Indian laws, you agree to defend, indemnify and hold harmless Wiviy, its officers, directors and employees from and against all liabilities, demands, claims, damages, complaints, losses, costs, and expenses, including attorney's fees, due to, arising out of, or relating in any way to your access to or use of the services, your content, or your breach of this agreement.</p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>14. Disclaimers</h2>
+    <p>Wiviy does not represent or warrant that (a) any matches or profiles presented will be compatible and/or guarantee success in finding a partner, (b) the service will be uninterrupted, secure or error free, (c) any defects or errors will be corrected, (d) any content or information you obtain on or through the service will be accurate, or (e) any suggestions or feedback will be incorporated.</p>
+    <p>Wiviy is provided on an "as-is" and "as-available" basis, without warranties of any kind. We do not guarantee uninterrupted service, error-free operation, compatibility results, or the accuracy of algorithmic or AI-based recommendations. Any match suggestions or compatibility indicators are informational only and should not be interpreted as professional guidance or assurances of relationship outcomes.</p>
+    <p>We do not verify the accuracy of user profiles, bios, photos, or statements. We are not responsible for any offline meetings, misrepresentations, harassment, fraud, impersonation, emotional distress, or harm arising from interactions between users.</p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>15. Intellectual Property Rights</h2>
+
+    <h3>15.1 Ownership of User Content</h3>
+    <p>You retain full ownership of the photos, bios, messages, and content you upload. By posting content, you give Wiviy a limited, worldwide, royalty-free, revocable licence to host, display, and use your content only for running and improving the platform. This licence ends when you delete the content or your account (subject to legal retention requirements). You must not upload content you don't own or that infringes copyright, trademarks, privacy rights, or any third-party IP.</p>
+
+    <h3>15.2 Platform Intellectual Property</h3>
+    <p>All platform IP including software, code, design, trademarks, logos, databases, algorithms, analytics models, and UX elements belongs exclusively to Wiviy. Users receive no rights to copy, modify, distribute, reverse-engineer, or commercially exploit any platform IP unless expressly permitted.</p>
+
+    <h3>15.3 AI-Based Matchmaking</h3>
+    <p>All AI models, algorithms, outputs, and recommendations (including compatibility scores) are proprietary to Wiviy. AI suggestions are informational only and do not guarantee accuracy or outcomes. Aggregated and anonymised data may be used to improve AI systems. No personal chats or identifiable data are used for commercial AI training.</p>
+
+    <h3>15.4 Use of Photos &amp; Public Content</h3>
+    <p>By uploading a profile photo or public content, you permit Wiviy to display it within the app for matchmaking, visibility, or safety purposes. We may use anonymised versions for analytics or internal AI training. We will never sell or use your content in external advertising without separate explicit consent.</p>
+
+    <h3>15.5 Reporting IP Infringement</h3>
+    <p>If you believe your IP is being misused, email our IP Compliance Officer at <a href="mailto:grievance@withapplication.com">grievance@withapplication.com</a>. Include: description of the work, location of the infringing content, your contact details, and a good-faith declaration. Upon valid notice, we may temporarily remove or disable the content, notify the user involved, and restore or remove the content after review, in line with Section 79 of the IT Act.</p>
+
+    <h3>15.6 Restrictions</h3>
+    <p>You may not copy or reproduce our software or algorithms; use our trademarks or branding without written consent; exploit platform data or outputs commercially; or create derivative works from Wiviy's IP. Violation may result in account termination and legal action.</p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>16. International Compliance &amp; Global Privacy Standards</h2>
+    <p>Wiviy is an India-based platform primarily governed by the Digital Personal Data Protection Act, 2023. However, we align our privacy and data-handling practices with the principles of major global regulations.</p>
+    <p>While Wiviy does not target users under the age of 18, we remain mindful of the Children's Online Privacy Protection Act (COPPA) in the United States and do not knowingly collect personal information from minors. For users located in the European Union, we follow the core principles of GDPR, including lawful and transparent processing, data minimisation, purpose limitation, and respect for user rights. Similar standards apply for users in the United Kingdom under UK GDPR, and for users in Canada (PIPEDA), Singapore (PDPA), and Australia (Australian Privacy Principles).</p>
+    <p>Across all jurisdictions, Wiviy applies a consistent global standard for security, privacy, and data transfer. International transfers are made only with appropriate contractual or regulatory safeguards, including Standard Contractual Clauses or equivalent mechanisms. Sensitive personal information such as sexual orientation, gender identity, or verification data is encrypted, access-restricted, and handled with heightened protection.</p>
+    <p>Personal data is kept only for as long as necessary for matchmaking, safety, fraud prevention, and compliance with applicable law. Upon account deletion, data is removed or anonymised within a reasonable period, typically within 90 days, except where laws require limited retention.</p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>17. Grievance Officer</h2>
+    <p>In accordance with Rule 3(2) of the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, the details of our Grievance Officer are as follows:</p>
     <ul>
-      <li>User behavior</li>
-      <li>Offline interactions</li>
-      <li>Losses or damages</li>
+      <li><strong>Name:</strong> [To be updated]</li>
+      <li><strong>Email:</strong> <a href="mailto:grievance@withapplication.com">grievance@withapplication.com</a></li>
+      <li><strong>Address:</strong> Zuntra Digital Private Limited, Developed Plot Estate, Plot No. 61, Perungudi, Chennai – 600096, Tamil Nadu, India</li>
     </ul>
-    <p>Maximum liability is limited to INR 100.</p>
+    <p>Complaints will be acknowledged within 24 hours and resolved within 15 days.</p>
   </div>
 
   <hr>
 
   <div class="section">
-    <h2>13. Intellectual Property</h2>
-    <p>All platform content belongs to Wiviy. Unauthorized use is prohibited.</p>
+    <h2>18. Governing Law &amp; Jurisdiction</h2>
+    <p>These Terms shall be governed by and construed in accordance with the laws of India. All disputes shall be subject to the exclusive jurisdiction of the courts in Chengalpattu, Tamil Nadu.</p>
   </div>
 
   <hr>
 
   <div class="section">
-    <h2>14. Grievance Officer</h2>
-    <p>Email: <a href="mailto:Grievance@withapplication.com">Grievance@withapplication.com</a></p>
-  </div>
-
-  <hr>
-
-  <div class="section">
-    <h2>15. Governing Law</h2>
-    <p>These Terms are governed by Indian law.</p>
-  </div>
-
-  <hr>
-
-  <div class="section">
-    <h2>16. Contact</h2>
+    <h2>19. Contact Us</h2>
     <p>
       <strong>Wiviy</strong><br>
       Zuntra Digital Private Limited<br>
@@ -642,19 +530,7 @@ hr{
   </div>
 
 </div>
-</div><!-- end page-terms -->
-
-<script>
-function showTab(tab) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('page-' + tab).classList.add('active');
-  const btns = document.querySelectorAll('.tab-btn');
-  if (tab === 'privacy') btns[0].classList.add('active');
-  if (tab === 'terms')   btns[1].classList.add('active');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-</script>
+</div>
 
 </body>
 </html>
